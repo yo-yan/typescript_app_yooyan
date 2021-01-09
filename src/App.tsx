@@ -116,6 +116,25 @@ function App() {
     December,
   }
 
+  //課題１
+  type MondaiType = {
+    id: number;
+    name: string;
+    url: string;
+    isStart: false
+  }
+  let mondai: MondaiType = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
+
+  interface MondaiInterface {
+    id: number;
+    name: string;
+    url: string;
+    isStart: false
+  }
+  let mondai1: MondaiInterface = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
+
+  //課題２
+
   return (
     <div className="App">
       <header className="App-header">
