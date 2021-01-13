@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { isTupleTypeNode } from 'typescript';
+import { MondaiType } from './types/UserType';
 
 function App() {
 
@@ -117,14 +118,6 @@ function App() {
   }
 
   //課題１
-  type MondaiType = {
-    id: number;
-    name: string;
-    url: string;
-    isStart: false
-  }
-  let mondai: MondaiType = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
-
   interface MondaiInterface {
     id: number;
     name: string;
@@ -133,7 +126,8 @@ function App() {
   }
   let mondai1: MondaiInterface = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
 
-  //課題２
+  //課題2 
+  const mondai: MondaiType = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
 
   return (
     <div className="App">

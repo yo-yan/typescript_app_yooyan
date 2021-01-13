@@ -6,7 +6,6 @@ export type MondaiType = {
     url: string;
     isStart: false;
 }
-let mondai: MondaiType = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
 
 export interface MondaiInterface {
     id: number;
@@ -17,9 +16,13 @@ export interface MondaiInterface {
 let mondai1: MondaiInterface = { id: 1, name: "hashimoto", url: "https://mondai.com", isStart: false }
 
 //EXTRA課題
+
+const str: string = "https://jsonplaceholder.typicode.com/users"
+
 type ExtraType = {
     id: number;
     name: string;
-    url: string;
     email: string;
+    city: string;
 }
+//let extra: ExtraType[] = ["https://jsonplaceholder.typicode.com/users"];
